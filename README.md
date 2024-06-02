@@ -11,6 +11,7 @@ This project is a code execution website where users can write Python3 code in a
 - **Code Editor:** Users can write Python 3 code using a built-in code editor.
 - **Code Execution:** Code can be executed to see results immediately.
 - **Code Submission:** Validates the execution and persists the code and output in a database.
+- **Submission History:** See your successful submissions in the database.
 - **Security:** User-submitted code is executed in a secure, isolated environment to prevent malicious actions.
 
 ## Tech Stack
