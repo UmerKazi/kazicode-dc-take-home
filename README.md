@@ -15,9 +15,9 @@ This project is a code execution website where users can write Python3 code in a
 
 ### Frontend
 
-- **Framework:** Next
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
+- **Framework:** `Next`
+- **Language:** `TypeScript`
+- **Styling:** `Tailwind CSS`
 - **Animations:** framer-motion
 - **Icons:** @tabler/icons-react
 - **Code Editor:** CodeMirror
@@ -43,13 +43,13 @@ This project is a code execution website where users can write Python3 code in a
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/UmerKazi/kazicode-main.git
-   cd kazicode-main
+   git clone https://github.com/UmerKazi/kazicode-dc-takehome-main.git
+   cd kazicode-dc-take-home-main
    ```
 
 2. **Build the project:**
-   ```docker-compose up --build
-
+   ```bash
+   docker-compose up --build
    ```
 
 - **Access the application:** Open your browser and navigate to `http://localhost:3000`.
