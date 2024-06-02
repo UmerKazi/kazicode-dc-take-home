@@ -1,8 +1,8 @@
-# Code Execution Website
+# KaziCode - DataCurve Take Home
 
 ## Overview
 
-This project is a code execution website where users can write Python 3 code in an editor, execute it, and see the results. Users can also submit their code, which validates the execution, and then persists the code and its output in a database. The website is built with modern web technologies and follows best practices for security and code organization.
+This project is a code execution website where users can write Python3 code in an editor, execute it, and see the results. Users can also submit their code, which validates the execution, and then persists the code and its output in a database. The website is built with modern web technologies and follows best practices for security and code organization.
 
 ## Features
 
@@ -15,17 +15,17 @@ This project is a code execution website where users can write Python 3 code in 
 
 ### Frontend
 
-- **Framework:** Next.js
+- **Framework:** Next
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS
 - **Animations:** framer-motion
-- **Icons:** tabler/icons-react
+- **Icons:** @tabler/icons-react
 - **Code Editor:** CodeMirror
 - **Containerization:** Docker
 
 ### Backend
 
-- **Framework:** FastAPI (Python 3)
+- **Framework:** FastAPI (Python3)
 - **Database:** PostgreSQL (Dockerized)
 - **Code Execution:** Isolated Docker container (secure_code_exec)
 
@@ -35,22 +35,21 @@ This project is a code execution website where users can write Python 3 code in 
 
 - Docker
 - Docker Compose
-- Node.js
-- Yarn or npm
-
-### Prerequisites
-
-- Docker
-- Docker Compose
-- Node.js
+- Node
 - Yarn or npm
 
 ### Installation
 
 1. **Clone the repository:**
+
    ```bash
    git clone https://github.com/UmerKazi/kazicode-main.git
    cd kazicode-main
+   ```
+
+2. **Build the project:**
+   ```docker-compose up --build
+
    ```
 
 - **Access the application:** Open your browser and navigate to `http://localhost:3000`.
@@ -61,15 +60,3 @@ This project is a code execution website where users can write Python 3 code in 
 
 - The backend abstracts code execution into a separate Docker container (`secure_code_exec`) to prevent malicious code from affecting the main application.
 - User-submitted code is executed in an isolated environment to mitigate security risks.
-
-## Contributing
-
-Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For any questions or support, please contact [your-email@example.com].
