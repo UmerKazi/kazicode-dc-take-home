@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: datacurve
+      POSTGRES_DB: code_execution_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: ./backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgres://admin:datacurve@db:5432/code_execution_db
+    depends_on:
+      - db
+      - secure_code_exec
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+  secure_code_exec:
+    build:
+      context: ./secure_code_exec
+    stdin_open: true
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "256M"
+    security_opt:
+      - no-new-privileges:true
+    read_only: true
+    tmpfs:
+      - /tmp
+
+volumes:
+  postgres_data:
