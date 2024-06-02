@@ -18,16 +18,16 @@ This project is a code execution website where users can write Python3 code in a
 - **Framework:** `Next`
 - **Language:** `TypeScript`
 - **Styling:** `Tailwind CSS`
-- **Animations:** framer-motion
-- **Icons:** @tabler/icons-react
-- **Code Editor:** CodeMirror
-- **Containerization:** Docker
+- **Animations:** `framer-motion`
+- **Icons:** `@tabler/icons-react`
+- **Code Editor:** `CodeMirror`
+- **Containerization:** `Docker`
 
 ### Backend
 
-- **Framework:** FastAPI (Python3)
-- **Database:** PostgreSQL (Dockerized)
-- **Code Execution:** Isolated Docker container (secure_code_exec)
+- **Framework:** `FastAPI (Python3)`
+- **Database:** `PostgreSQL (Dockerized)`
+- **Code Execution:** `Isolated Docker Container (secure_code_exec)`
 
 ## Getting Started
 
